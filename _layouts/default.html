@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>{{ page.title }}</title>
+      <meta name="viewport" content="width=device-width">
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="/assets/css/main.css">
+
+    </head>
+    <body class="{{ page.body_class }}">
+      <div class="container">
+        <div class="parent">
+          <div class="child">
+            <p>
+              @ritcheyer<br>
+              eric.ritchey.io
+            </p>
+          </div>
+          <div class="child">
+            <p>
+              @jamescarleton<br>
+              carletondesign.com
+            </p>
+          </div>
+          <div class="child">
+              <img src="/assets/img/logo-0-transparent-bg.svg">
+          </div>
+        </div>
+        {{ content }}
+      </div>
+    </body>
+</html>
