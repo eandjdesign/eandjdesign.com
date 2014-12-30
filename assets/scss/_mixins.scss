@@ -10,3 +10,41 @@
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+
+@mixin ejd-link($link-color, $hover-color) {
+  color: $link-color;
+  text-decoration: none;
+  &:hover { color: $hover-color; }
+}
+
+@mixin as-table($classname) {
+  display: table;
+  width: 100%;
+  height: 100%;
+  .#{$classname} {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+@mixin as-flexbox {
+  align-items: center;
+  align-content: center;
+
+  display: -webkit-box;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:         flex;
+
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+
+  justify-content: space-around;
+}
