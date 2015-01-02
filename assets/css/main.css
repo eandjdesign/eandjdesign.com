@@ -83,12 +83,15 @@ img {
   .child:nth-child(n) {
     text-align: center; }
   .child:nth-child(1) {
-    order: 1; }
+    order: 1;
+    width: calc(50% - .9rem); }
   .child:nth-child(2) {
-    order: 2; }
+    order: 2;
+    width: calc(50% - .9rem); }
   .child:nth-child(3) {
     order: 3;
-    width: auto;
-    max-width: 500px; } }
+    width: 100%;
+    max-width: 500px;
+    margin: auto; } }
 
 /*# sourceMappingURL=main.css.map */
